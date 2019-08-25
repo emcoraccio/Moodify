@@ -1,6 +1,6 @@
 # Moodify
 
-## Description: 
+## Description
 
 This site is designed to help set the music for your mood by recommending playlists based on time of day, temperature, and general weather outside upon user zipcode input
 
@@ -10,7 +10,7 @@ The background smoothly transitions to reflect time of day and weather as well t
 
 ## Code
 
-* Pulls from two APIs to get its data
+* Pulls from two APIs to get its data:
   - Openweather API
   - Spotify API
 
