@@ -23,7 +23,7 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-    </script>
+        </script>
 
     <!-- momentjs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
@@ -34,8 +34,9 @@
 
     <div class="row center">
         <div class="col s12">
-            <h1 class="mainHeader">m o o d i f y</h1>
+            <h1 class="mainHeader">moodify</h1>
             <p class="site-description">playlists based on the weather for your mood</p>
+            <!-- <a id="login" class="col s2 offset-s5 waves-effect waves-light btn" href="https://accounts.spotify.com/authorize?client_id=c7858a53b3d84a809aa7b91a80a80e08&redirect_uri=http:%2F%2Flocalhost:5500&scope=user-read-private%20user-read-email&response_type=token&state=123">Login</a> -->
         </div>
     </div>
 
@@ -150,6 +151,8 @@
                     <span class="helper-text">Please enter a valid zipcode</span>
                     <a class="waves-effect waves-light btn" id="submitZip">Search</a>
                 </div>
+                <a id="login" class="col s2 offset-s5 waves-effect waves-light btn" href="https://accounts.spotify.com/authorize?client_id=c7858a53b3d84a809aa7b91a80a80e08&redirect_uri=https:%2F%2Femcoraccio.github.io%2FMoodify%2F&scope=user-read-private%20user-read-email&response_type=token&state=123">Login</a>
+
             </div> 
         </div>
     </section>
@@ -163,7 +166,7 @@
 
                     <div class="col s12 center">
                         <p class="weather-error error">No Results Found For Current Zip</p>
-                        <p class="music-error error">No Results Found. Please Refresh Access Token</p>
+                        <p class="music-error error">No Results Found. Please Login</p>
                     </div>
 
                 </div>

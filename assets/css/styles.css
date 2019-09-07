@@ -21,6 +21,7 @@ h1 {
 h1.mainHeader {
 
     font-size: 6em;
+    letter-spacing: .5em;
 
 }
 
@@ -254,12 +255,22 @@ i.up-arrow:hover {
 
 }
 
+a#login {
+    display: block;
+    background-color: rgba(1, 12, 12, 0.75);
+    margin-top: 30px;
+}
+
 
 
 @media screen and (max-width: 640px) {
     
-    h1 {
-        font-size: 2rem;
+    h1.mainHeader {
+        letter-spacing: 0em;
+    }
+
+    a#login {
+        margin-top: 0px
     }
     
 }

@@ -484,8 +484,20 @@ $(document).ready(function () {
 
   }
 
+  // let params = document.location.hash.split("=")[1].replace("&token_type","")
+  let accessToken;
+  try {
+     accessToken = document.location.hash.split("=")[1].replace("&token_type", "")
+  }
+  catch
+  {
+    console.log("no access token found")
+  }
+
+  console.log(accessToken)
+
   // var to hold access token
-  let accessToken = "BQBStZqKb6_wINiB0b611bnaxGI2erSFYjbAD6ImT3qG3hnHOE21tXgnU6KVSWeDSOkgTalP8y3WXHPJwe3pZMW-q2HIk-PkRZn0mWgT_NkVMtkbZcGzZKk1cATjEQRkbTKmwxtaKM519j72njF4AZ7boeKhLegO1apEKeUKzJW2b82OEmXN6-kXKe2AeiMAu6PwTEWse42PxK166oc27DSX7s25Wxa0AGs_VuAv8A"
+  // let accessToken = "BQBStZqKb6_wINiB0b611bnaxGI2erSFYjbAD6ImT3qG3hnHOE21tXgnU6KVSWeDSOkgTalP8y3WXHPJwe3pZMW-q2HIk-PkRZn0mWgT_NkVMtkbZcGzZKk1cATjEQRkbTKmwxtaKM519j72njF4AZ7boeKhLegO1apEKeUKzJW2b82OEmXN6-kXKe2AeiMAu6PwTEWse42PxK166oc27DSX7s25Wxa0AGs_VuAv8A"
   let searchForPlaylist = function () {
 
     // makes an ajax request to search the spotify api with recommended playlists
@@ -498,6 +510,8 @@ $(document).ready(function () {
       success: function (response) {
 
         $("p.music-error").hide();
+        $("a#login").hide();
+
 
         playlists = response.playlists.items;
 
@@ -509,6 +523,8 @@ $(document).ready(function () {
       error: function (error) {
         $("p.music-error").show();
         $("i.up-arrow").hide();
+        $("a#login").fadeIn();
+
       }
 
     });
@@ -559,6 +575,9 @@ $(document).ready(function () {
 
           console.log(playlists);
 
+          $("a#login").hide();
+          
+
           $("div.first-row").hide().removeClass("fadeInUp");
           $("div.second-row i").show();
           $("div.second-row").hide().removeClass("fadeInUp");
@@ -570,6 +589,8 @@ $(document).ready(function () {
         error: function (error) {
           $("p.music-error").show();
           $("i.up-arrow").hide();
+          $("a#login").fadeIn();
+
         }
 
       });

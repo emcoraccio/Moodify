@@ -25,4 +25,4 @@ The background smoothly transitions to reflect time of day and weather as well t
   -- I will be working to resolve this to get it to refresh automatically
 
 
-The site is deployed at https://emcoraccio.github.io/Project1/
+The site is deployed at https://emcoraccio.github.io/Moodify/
