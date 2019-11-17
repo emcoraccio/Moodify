@@ -496,8 +496,6 @@ $(document).ready(function () {
 
   console.log(accessToken)
 
-  // var to hold access token
-  // let accessToken = "BQBStZqKb6_wINiB0b611bnaxGI2erSFYjbAD6ImT3qG3hnHOE21tXgnU6KVSWeDSOkgTalP8y3WXHPJwe3pZMW-q2HIk-PkRZn0mWgT_NkVMtkbZcGzZKk1cATjEQRkbTKmwxtaKM519j72njF4AZ7boeKhLegO1apEKeUKzJW2b82OEmXN6-kXKe2AeiMAu6PwTEWse42PxK166oc27DSX7s25Wxa0AGs_VuAv8A"
   let searchForPlaylist = function () {
 
     // makes an ajax request to search the spotify api with recommended playlists

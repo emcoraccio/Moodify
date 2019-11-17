@@ -8,21 +8,30 @@ It also allows users to customize their preferences, describing how they feel, o
 
 The background smoothly transitions to reflect time of day and weather as well to further set the environment
 
+In order for this site to function properly, you will need to authorize it to access your spotify. Because this is entirely a front end website, this access token will expire every hour. 
+
+
 ## Code
 
-* Pulls from two APIs to get its data:
+This website is split into some basic components. The index.html file is located in the root of the project, along with the assets folder which contains the remainder of the files. It is split up into four folders: 
+* css
+* icons
+* images
+* javascript
+
+The javascript is all in one app.js file. The css styles are all located in a single styles.css file in the css folder. Any background images can be found in the images folder, and the moving icons in the icons folder.
+
+APIS: 
   - Openweather API
   - Spotify API
 
-* Uses: 
+Technologies: 
   - Javascript
   - AJAX
   - Jquery
   - HTML5/CSS3
-
-* Limitations: 
-  - This project currently requires an access token, which expires every hour, in order to run correctly - it is meant to be built with a back-end.
-  -- I will be working to resolve this to get it to refresh automatically
+  - Materialize
+  - Animate CSS
 
 
 The site is deployed at https://emcoraccio.github.io/Moodify/
